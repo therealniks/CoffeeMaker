@@ -13,6 +13,9 @@
 		809911692630AA63007F66D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809911672630AA63007F66D2 /* Main.storyboard */; };
 		8099116B2630AA64007F66D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8099116A2630AA64007F66D2 /* Assets.xcassets */; };
 		8099116E2630AA64007F66D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8099116C2630AA64007F66D2 /* LaunchScreen.storyboard */; };
+		8099117D2630AD63007F66D2 /* SimpleCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099117C2630AD63007F66D2 /* SimpleCoffee.swift */; };
+		809911812630ADD5007F66D2 /* CoffeeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809911802630ADD5007F66D2 /* CoffeeType.swift */; };
+		809911842630BFE3007F66D2 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809911832630BFE3007F66D2 /* Coffee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8099116A2630AA64007F66D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8099116D2630AA64007F66D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8099116F2630AA64007F66D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8099117C2630AD63007F66D2 /* SimpleCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoffee.swift; sourceTree = "<group>"; };
+		809911802630ADD5007F66D2 /* CoffeeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeType.swift; sourceTree = "<group>"; };
+		809911832630BFE3007F66D2 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		809911602630AA63007F66D2 /* CoffeeMaker */ = {
 			isa = PBXGroup;
 			children = (
+				8099117B2630AD46007F66D2 /* Coffee */,
+				8099117A2630AD3D007F66D2 /* Decorator */,
 				809911612630AA63007F66D2 /* AppDelegate.swift */,
 				809911632630AA63007F66D2 /* SceneDelegate.swift */,
 				809911652630AA63007F66D2 /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				8099116F2630AA64007F66D2 /* Info.plist */,
 			);
 			path = CoffeeMaker;
+			sourceTree = "<group>";
+		};
+		8099117A2630AD3D007F66D2 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		8099117B2630AD46007F66D2 /* Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				8099117C2630AD63007F66D2 /* SimpleCoffee.swift */,
+				809911802630ADD5007F66D2 /* CoffeeType.swift */,
+				809911832630BFE3007F66D2 /* Coffee.swift */,
+			);
+			path = Coffee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +165,9 @@
 				809911662630AA63007F66D2 /* ViewController.swift in Sources */,
 				809911622630AA63007F66D2 /* AppDelegate.swift in Sources */,
 				809911642630AA63007F66D2 /* SceneDelegate.swift in Sources */,
+				809911812630ADD5007F66D2 /* CoffeeType.swift in Sources */,
+				8099117D2630AD63007F66D2 /* SimpleCoffee.swift in Sources */,
+				809911842630BFE3007F66D2 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
