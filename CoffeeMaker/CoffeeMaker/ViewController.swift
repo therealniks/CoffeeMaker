@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    enum constants {
+    enum Constants {
         static var withDefaultMilk = 1
         static var justnNotGood = 2
     }
@@ -68,28 +68,24 @@ class ViewController: UIViewController {
         self.priceLabel.text = "Price: " +  String(checkPrice(coffee: self.simple))
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         checkVolume()
         self.priceLabel.text = "Price: " +  String(checkPrice(coffee: self.simple))
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
 
 extension ViewController {
     func checkTopping(){
-        if coffeeTypeSelected.selectedSegmentIndex > constants.withDefaultMilk {
+        if coffeeTypeSelected.selectedSegmentIndex > Constants.withDefaultMilk {
             milkSwitch.isEnabled = false
+            milkSwitch.isOn = false
         } else {
             milkSwitch.isEnabled = true
         }
-        if coffeeTypeSelected.selectedSegmentIndex < constants.justnNotGood {
+        if coffeeTypeSelected.selectedSegmentIndex < Constants.justnNotGood {
             marshmallowSwitch.isEnabled = false
+            marshmallowSwitch.isOn = false
         } else {
             marshmallowSwitch.isEnabled = true
         }
@@ -111,6 +107,4 @@ extension ViewController {
         let withMarshMallow = CoffeeWithMarshmallow(base: withSyrop, withMarshmallow: self.marshmallowSwitch.isOn)
         return withMarshMallow.price
     }
-    
 }
-

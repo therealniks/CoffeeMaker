@@ -63,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				8099117B2630AD46007F66D2 /* Coffee */,
-				8099117A2630AD3D007F66D2 /* Decorator */,
 				809911612630AA63007F66D2 /* AppDelegate.swift */,
 				809911632630AA63007F66D2 /* SceneDelegate.swift */,
 				809911652630AA63007F66D2 /* ViewController.swift */,
@@ -73,13 +72,6 @@
 				8099116F2630AA64007F66D2 /* Info.plist */,
 			);
 			path = CoffeeMaker;
-			sourceTree = "<group>";
-		};
-		8099117A2630AD3D007F66D2 /* Decorator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Decorator;
 			sourceTree = "<group>";
 		};
 		8099117B2630AD46007F66D2 /* Coffee */ = {
